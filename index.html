@@ -8,10 +8,12 @@
 <meta name="robots" content="noindex, nofollow"><!-- remover após aprovação -->
 <meta property="og:title" content="Dra. Mariana Nascimento | Advocacia Previdenciária">
 <meta property="og:description" content="Aposentadorias, BPC/LOAS, auxílios, pensões e revisões do INSS. Fale com o escritório pelo WhatsApp.">
-<meta name="theme-color" content="#17284A">
+<meta name="theme-color" content="#14342F">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" type="image/png" href="img/mark-green.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bitter:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Marcellus&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
 <!-- Google Ads: substitua AW-XXXXXXXXX e o rótulo de conversão em script.js -->
@@ -24,10 +26,9 @@
 
 <header class="topbar">
   <div class="wrap topbar__inner">
-    <div class="brand">
-      <span class="brand__name">Mariana Nascimento</span>
-      <span class="brand__meta">Advocacia Previdenciária · OAB/UF 000.000</span>
-    </div>
+    <a class="brand" href="#" aria-label="Mariana Nascimento Advocacia Previdenciária">
+      <img class="brand__logo" src="img/logo-h-gold.png" alt="Mariana Nascimento, Advocacia Previdenciária" width="1141" height="200">
+    </a>
     <a class="btn btn--wa btn--sm js-wa" data-msg="Olá! Vim pelo site e gostaria de falar com o escritório sobre uma questão com o INSS." href="#">
       <svg class="ico" aria-hidden="true"><use href="#wa"/></svg> WhatsApp
     </a>
@@ -42,6 +43,10 @@
     <div class="hero__text">
       <h1>Seu benefício do INSS foi negado, cortado ou está demorando?</h1>
       <p class="lead">A Dra. Mariana Nascimento atua em Direito Previdenciário e analisa o seu caso com atenção aos documentos, ao tempo de contribuição e às regras que se aplicam a você. Atendimento online, em todo o Brasil.</p>
+      <div class="byline">
+        <img src="img/mariana-avatar.jpg" alt="" width="240" height="240">
+        <p><strong>Dra. Mariana Nascimento</strong><br>Advogada · OAB/UF 000.000</p>
+      </div>
     </div>
 
     <div class="picker" aria-labelledby="picker-title">
@@ -120,10 +125,7 @@
 <section class="section section--paper" id="sobre">
   <div class="wrap about">
     <figure class="about__photo">
-      <!-- Substitua por <img src="mariana.jpg" alt="Dra. Mariana Nascimento"> -->
-      <div class="photo-ph" role="img" aria-label="Foto da Dra. Mariana Nascimento">
-        <span>MN</span>
-      </div>
+      <img src="img/mariana-sobre.jpg" alt="Dra. Mariana Nascimento segurando um manual de planejamento previdenciário" width="760" height="1125" loading="lazy">
     </figure>
     <div class="about__text">
       <h2 class="h2">Dra. Mariana Nascimento</h2>
@@ -168,11 +170,15 @@
 <!-- CTA FINAL -->
 <section class="final">
   <div class="wrap final__inner">
+    <img class="final__photo" src="img/mariana-cafe.jpg" alt="Dra. Mariana Nascimento no escritório" width="620" height="814" loading="lazy">
+    <div class="final__text">
+    <img class="final__mark" src="img/mark-gold.png" alt="" width="114" height="120">
     <h2>Converse com o escritório e entenda sua situação</h2>
     <p>Envie uma mensagem e conte o que aconteceu com o seu benefício.</p>
     <a class="btn btn--wa btn--lg js-wa" href="#" data-msg="Olá! Vim pelo site e gostaria de falar sobre meu caso com o INSS.">
       <svg class="ico" aria-hidden="true"><use href="#wa"/></svg> Falar no WhatsApp
     </a>
+    </div>
   </div>
 </section>
 
@@ -180,6 +186,7 @@
 
 <footer class="footer">
   <div class="wrap">
+    <img class="footer__logo" src="img/logo-h-gold.png" alt="Mariana Nascimento, Advocacia Previdenciária" width="1141" height="200" loading="lazy">
     <p class="footer__name">Dra. Mariana Nascimento · Advogada · OAB/UF 000.000</p>
     <p>Endereço do escritório, Cidade/UF · Atendimento online em todo o Brasil</p>
     <p class="footer__legal">Este site tem caráter exclusivamente informativo, em conformidade com o Código de Ética e Disciplina da OAB e o Provimento nº 205/2021. As informações aqui contidas não constituem promessa de resultado. Cada caso é analisado de forma individual.</p>
