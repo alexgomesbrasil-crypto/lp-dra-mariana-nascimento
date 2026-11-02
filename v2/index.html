@@ -67,12 +67,15 @@
     <h2 class="h2">Qual é o seu momento?</h2>
     <p class="intro">Escolha a opção que mais se parece com a sua situação para ver como o escritório pode ajudar.</p>
 
-    <div class="tabs" role="tablist" aria-label="Situações">
+    <div class="tabs">
+      <div class="tabs__list" role="tablist" aria-label="Situações">
       <button role="tab" id="t1" aria-controls="p1" aria-selected="true">Vou me aposentar</button>
       <button role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1">Estou doente ou sofri acidente</button>
       <button role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1">Idoso ou pessoa com deficiência</button>
       <button role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1">Perdi um familiar</button>
       <button role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1">Já sou aposentado</button>
+      </div>
+      <a class="tabs__other js-wa" href="#" data-msg="Olá! Em que podemos ajudá-lo?"><svg class="ico" aria-hidden="true"><use href="#wa"/></svg> Outros</a>
     </div>
 
     <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
