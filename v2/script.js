@@ -40,6 +40,27 @@ var CONFIG = {
     });
   });
 
+  // Carrossel de avaliações
+  var car = document.querySelector(".car");
+  var btns = document.querySelectorAll(".car__btn");
+  if (car && btns.length) {
+    var update = function () {
+      var max = car.scrollWidth - car.clientWidth - 2;
+      btns[0].disabled = car.scrollLeft <= 2;
+      btns[1].disabled = car.scrollLeft >= max;
+    };
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var slide = car.querySelector(".slide");
+        var step = slide ? slide.getBoundingClientRect().width + 16 : car.clientWidth;
+        car.scrollBy({ left: step * Number(b.dataset.dir), behavior: "smooth" });
+      });
+    });
+    car.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  }
+
   var ano = document.getElementById("ano");
   if (ano) ano.textContent = new Date().getFullYear();
 })();
