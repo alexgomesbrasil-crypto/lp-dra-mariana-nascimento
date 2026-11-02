@@ -2,7 +2,7 @@
    WHATSAPP: DDI + DDD + número, só dígitos (ex.: 5585999999999)
    GOOGLE ADS: ID/rótulo da conversão para rastrear cliques no WhatsApp */
 var CONFIG = {
-  whatsapp: "5500000000000",
+  whatsapp: "5544991655847",
   adsConversion: "" // ex.: "AW-XXXXXXXXX/AbCdEfGhIjk"
 };
 
