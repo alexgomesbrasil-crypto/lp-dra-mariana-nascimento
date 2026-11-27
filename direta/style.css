@@ -1,0 +1,118 @@
+:root{
+  --green:#14342F;
+  --green-2:#1B433C;
+  --deep:#0E2622;
+  --bg:#F7F7F5;
+  --white:#FFFFFF;
+  --gold:#B9A890;
+  --gold-soft:#D6C4A3;
+  --text:#22302D;
+  --muted:#5B6764;
+  --line:#E2E3DE;
+  --wa:#25D366;
+  --wa-hover:#1FBE5B;
+  --wa-ink:#0B2B22;
+  --serif:"Marcellus", Georgia, serif;
+  --sans:"Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);font-size:1.0625rem;line-height:1.6;color:var(--text);background:var(--white)}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--serif);font-weight:400;color:var(--green);margin:0;line-height:1.15}
+p{margin:0 0 1em}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 20px}
+.ico{width:1.35em;height:1.35em;flex:none}
+.h2{font-size:clamp(1.85rem,5.6vw,2.6rem);margin-bottom:28px}
+
+/* Botão principal: verde WhatsApp = ação reconhecível */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:58px;padding:0 1.8em;background:var(--wa);color:var(--wa-ink);font-weight:700;font-size:1.1rem;text-decoration:none;border-radius:999px;box-shadow:0 8px 22px -10px rgba(37,211,102,.7);transition:background-color .15s}
+.btn:hover{background:var(--wa-hover)}
+.btn--lg{min-height:62px;font-size:1.15rem;padding:0 2.2em}
+
+/* Topo */
+.top{background:var(--green)}
+.top__in{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
+.top__logo{height:34px;width:auto}
+.top__oab{color:#B8C6C1;font-size:.85rem;font-weight:600;white-space:nowrap}
+
+/* Hero */
+.hero{background:var(--green);color:#DDE6E2;overflow:hidden}
+.hero__grid{display:grid}
+.hero__text{padding:34px 0 30px}
+.hero__kicker{color:var(--gold-soft);font-weight:600;font-size:.95rem;margin-bottom:10px}
+.hero h1{color:var(--white);font-size:clamp(2.3rem,9vw,3.8rem);max-width:13ch}
+.hero__lead{font-size:1.12rem;margin:18px 0 26px;max-width:34em}
+.hero .btn{width:100%}
+.hero__note{display:flex;align-items:center;gap:8px;margin:14px 0 0;font-size:.95rem}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--wa);flex:none;box-shadow:0 0 0 4px rgba(37,211,102,.2)}
+.hero__photo{width:100%;max-width:400px;height:auto;aspect-ratio:4/4.3;object-fit:cover;object-position:50% 18%;justify-self:center;border-radius:200px 200px 0 0}
+
+/* Serviços */
+.services{padding:64px 0;background:var(--bg)}
+.cards{display:grid;gap:16px}
+.card{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:6px;padding:24px 22px;display:flex;flex-direction:column}
+.card h3{font-size:1.5rem;margin-bottom:12px}
+.card ul{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:6px;flex:1}
+.card li{position:relative;padding-left:22px;font-size:1rem}
+.card li::before{content:"";position:absolute;left:2px;top:.55em;width:10px;height:6px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg)}
+.card__cta{display:flex;align-items:center;justify-content:center;gap:.5em;min-height:50px;border-radius:999px;border:2px solid var(--green);color:var(--green);font-weight:700;text-decoration:none;font-size:1rem}
+.card__cta:hover{background:var(--green);color:var(--white)}
+.card--alert{background:var(--green);border-color:var(--green);border-top-color:var(--gold-soft)}
+.card--alert h3{color:var(--white)}
+.card--alert li{color:#DDE6E2}
+.card--alert .card__cta{background:var(--wa);border-color:var(--wa);color:var(--wa-ink)}
+.card--alert .card__cta:hover{background:var(--wa-hover)}
+
+/* Sobre */
+.about{padding:64px 0}
+.about__grid{display:grid;gap:32px;align-items:center}
+.about__photo{width:100%;max-width:420px;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 12%;border-radius:6px}
+.about p{max-width:36em}
+.facts{list-style:none;margin:6px 0 28px;padding:0;display:grid;gap:10px}
+.facts li{position:relative;padding-left:22px}
+.facts li::before{content:"";position:absolute;left:2px;top:.55em;width:10px;height:6px;border-left:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg)}
+
+/* Avaliações */
+.reviews{padding:64px 0;background:var(--bg)}
+.reviews__grid{display:grid;gap:16px}
+.review{margin:0;background:var(--white);border:1px solid var(--line);border-radius:6px;padding:22px}
+.stars{color:#E7A900;letter-spacing:2px;margin-bottom:10px}
+.review blockquote{margin:0 0 12px;font-size:1rem}
+.review figcaption{font-weight:600;color:var(--muted);font-size:.92rem}
+.reviews__foot{margin:20px 0 0;font-size:.88rem;color:var(--muted)}
+.reviews__foot a{color:var(--green);font-weight:700}
+
+/* CTA final */
+.final{background:var(--green);color:#DDE6E2;padding:64px 0;text-align:center}
+.final__in{display:flex;flex-direction:column;align-items:center}
+.final__mark{height:60px;width:auto;margin-bottom:18px}
+.final h2{color:var(--white);font-size:clamp(2rem,6vw,2.8rem);margin-bottom:12px}
+.final p{max-width:30em;margin-bottom:26px}
+
+/* Rodapé */
+.footer{background:var(--deep);color:#A9B8B3;padding:30px 0 100px;font-size:.9rem}
+.footer strong{color:var(--white)}
+.footer__legal{font-size:.8rem;max-width:62em;margin:0}
+
+/* Barra fixa do WhatsApp */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;align-items:center;justify-content:center;gap:.55em;min-height:62px;padding-bottom:env(safe-area-inset-bottom);background:var(--wa);color:var(--wa-ink);font-weight:700;font-size:1.1rem;text-decoration:none;box-shadow:0 -6px 20px -8px rgba(0,0,0,.35);transform:translateY(110%);transition:transform .25s ease}
+.sticky.is-on{transform:none}
+
+@media (min-width:700px){
+  .cards{grid-template-columns:1fr 1fr}
+  .reviews__grid{grid-template-columns:repeat(3,1fr)}
+  .about__grid{grid-template-columns:minmax(260px,400px) 1fr;gap:56px}
+  .hero .btn{width:auto}
+}
+@media (min-width:980px){
+  .top__logo{height:42px}
+  .hero__grid{grid-template-columns:1.15fr 1fr;gap:48px;align-items:end}
+  .hero__text{padding:72px 0 80px;align-self:center}
+  .hero__photo{max-width:430px;margin-top:40px;justify-self:end;aspect-ratio:4/5}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .footer{padding-bottom:30px}
+  .sticky{left:auto;right:24px;bottom:24px;min-height:60px;padding:0 24px;border-radius:999px;box-shadow:0 10px 26px -8px rgba(0,0,0,.45)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
